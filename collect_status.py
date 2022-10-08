@@ -50,7 +50,7 @@ class TaskCluster:
 class StatusUpdater:
     def run():
         job_name = "are-we-esmified-yet-check"
-        route_name = "gecko.v2.mozilla-central.latest.firefox.are-we-esmified-yet"
+        route_name = "comm.v2.comm-central.latest.thunderbird.are-we-esmified-yet"
         artifact_name = "public/are-we-esmified-yet.json"
 
         Logger.info("Loading log")
