@@ -4,9 +4,9 @@ on:
   schedule:
     # Merge happens twice a day, and either of them runs the js(esm) job.
     # Run this twice a day as well, to catch both of them.
-    - cron: '0 0,12 * * *'
+    - cron: '0 0 30 * *'
   push:
-    branch: gh-pages
+    branches: [gh-pages]
 
 jobs:
   build:
