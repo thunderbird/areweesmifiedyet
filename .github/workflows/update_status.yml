@@ -2,9 +2,9 @@ name: Collect status JSON
 
 on:
   schedule:
-    # Merge happens twice a day, and either of them runs the js(esm) job.
-    # Run this twice a day as well, to catch both of them.
-    - cron: '0 0 30 * *'
+    # The CI job to generate current data runs at 0:15UTC daily. 
+    # So, run 15 minutes later; it should be done by then
+    - cron: '30 0 * * *'
   push:
     branches: [gh-pages]
 
